@@ -1,3 +1,6 @@
+USE HHA
+GO
+	
 SELECT
 	ap.AuthorizationFrom, ap.AuthorizationTo, pa.Authorizationnumber, pa.FromDate, pa.ToDate, pa.PatientID,  pa.AuthProviderID, pa.PayerID, 
 	va.AuthorizationID, SUM(va.UsedUnitsInVisit) as UnitsUsed, ap.TotalAuthorizations, va.AuthorizationPeriodID
